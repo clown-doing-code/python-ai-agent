@@ -36,7 +36,6 @@ def main()-> None:
 
 def generated_content(client: OpenAI, messages, verbose: bool)-> None:
     for _ in range(MAX_ITERATIONS):
-
         response: ChatCompletion = client.chat.completions.create(
             model="openrouter/free",
             messages=messages,
